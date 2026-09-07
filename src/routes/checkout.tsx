@@ -25,7 +25,7 @@ export const Route = createFileRoute("/checkout")({
       { property: "og:description", content: "Pay by UPI and confirm your order on WhatsApp." },
     ],
   }),
-  component: Checkout;
+  component: Checkout,
 });
 
 const schema = z.object({
