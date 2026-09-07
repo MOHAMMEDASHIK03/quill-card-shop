@@ -38,28 +38,13 @@ function AuthPage() {
     await router.navigate({ to: "/admin" });
   }
 
-  async function createAccount() {
-    setBusy(true);
-    const { error } = await supabase.auth.signUp({
-      email: email.trim(),
-      password,
-      options: { emailRedirectTo: window.location.origin },
-    });
-    setBusy(false);
-    if (error) {
-      toast.error(error.message);
-      return;
-    }
-    toast.success("Account created — you can sign in now");
-  }
+
+
 
   return (
     <div className="mx-auto flex max-w-md flex-col px-4 py-20">
       <h1 className="text-3xl text-primary">Admin login</h1>
-      <p className="mt-2 text-sm text-muted-foreground">
-        For the store owner only. First time here? Enter the owner email and password, then tap “Create
-        account”.
-      </p>
+      <p className="mt-2 text-sm text-muted-foreground">For the store owner only.</p>
 
       <div className="mt-8 space-y-4 rounded-xl border border-border bg-card p-6">
         <div className="space-y-1.5">
@@ -78,15 +63,8 @@ function AuthPage() {
         <Button className="w-full" onClick={signIn} disabled={busy || !email || !password}>
           Sign in
         </Button>
-        <Button
-          variant="outline"
-          className="w-full"
-          onClick={createAccount}
-          disabled={busy || !email || !password}
-        >
-          Create account
-        </Button>
       </div>
+
     </div>
   );
 }
