@@ -24,10 +24,10 @@ import { formatINR } from "@/lib/cart";
 export const Route = createFileRoute("/_authenticated/admin")({
   head: () => ({
     meta: [
-      { title: "Admin Dashboard — Quill Cards" },
-      { name: "description", content: "Manage Quill Cards products, prices, photos, offers and orders." },
-      { property: "og:title", content: "Admin Dashboard — Quill Cards" },
-      { property: "og:description", content: "Store management for Quill Cards." },
+      { title: "Admin Dashboard — Quilll Cards" },
+      { name: "description", content: "Manage Quilll Cards products, prices, photos, offers and orders." },
+      { property: "og:title", content: "Admin Dashboard — Quilll Cards" },
+      { property: "og:description", content: "Store management for Quilll Cards." },
       { name: "robots", content: "noindex" },
     ],
   }),

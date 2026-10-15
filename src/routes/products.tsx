@@ -15,13 +15,13 @@ export const Route = createFileRoute("/products")({
   }),
   head: () => ({
     meta: [
-      { title: "Shop All Products — Quill Cards" },
+      { title: "Shop All Products — Quilll Cards" },
       {
         name: "description",
         content:
-          "Browse Salah trackers, laminated charts, flash cards and wall posters from Quill Cards. Filter by category and add to cart without signing in.",
+          "Browse Salah trackers, laminated charts, flash cards and wall posters from Quilll Cards. Filter by category and add to cart without signing in.",
       },
-      { property: "og:title", content: "Shop All Products — Quill Cards" },
+      { property: "og:title", content: "Shop All Products — Quilll Cards" },
       {
         property: "og:description",
         content: "Salah trackers, laminated charts, flash cards and wall posters.",

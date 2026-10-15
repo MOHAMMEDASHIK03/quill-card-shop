@@ -19,7 +19,7 @@ export function ProductCard({ product }: { product: Product }) {
           />
         ) : (
           <div className="flex h-full items-center justify-center font-display text-sm text-muted-foreground">
-            Quill Cards
+            Quilll Cards
           </div>
         )}
         {product.special_offer && (

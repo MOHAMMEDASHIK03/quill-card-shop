@@ -10,13 +10,13 @@ import { CATEGORIES, productsQuery } from "@/lib/products";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Quill Cards — Salah Trackers, Charts, Flash Cards & Posters" },
+      { title: "Quilll Cards — Salah Trackers, Charts, Flash Cards & Posters" },
       {
         name: "description",
         content:
-          "Shop Quill Cards: Salah trackers, laminated charts, flash cards and wall posters designed to make learning joyful. Pay easily by UPI and order on WhatsApp.",
+          "Shop Quilll Cards: Salah trackers, laminated charts, flash cards and wall posters designed to make learning joyful. Pay easily by UPI and order on WhatsApp.",
       },
-      { property: "og:title", content: "Quill Cards — Learning Made Beautiful" },
+      { property: "og:title", content: "Quilll Cards — Learning Made Beautiful" },
       {
         property: "og:description",
         content: "Salah trackers, laminated charts, flash cards and wall posters for young learners.",
@@ -49,7 +49,7 @@ function Home() {
             Learning that feels like a gift.
           </h1>
           <p className="mt-4 max-w-lg text-base text-muted-foreground">
-            Quill Cards designs Salah trackers, laminated charts, flash cards and wall posters that make
+            Quilll Cards designs Salah trackers, laminated charts, flash cards and wall posters that make
             everyday learning beautiful for children and families.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
