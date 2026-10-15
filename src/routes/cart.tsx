@@ -7,12 +7,12 @@ import { formatINR, useCart } from "@/lib/cart";
 export const Route = createFileRoute("/cart")({
   head: () => ({
     meta: [
-      { title: "Your Cart — Quill Cards" },
+      { title: "Your Cart — Quilll Cards" },
       {
         name: "description",
-        content: "Review the Quill Cards items in your cart and continue to UPI checkout — no account needed.",
+        content: "Review the Quilll Cards items in your cart and continue to UPI checkout — no account needed.",
       },
-      { property: "og:title", content: "Your Cart — Quill Cards" },
+      { property: "og:title", content: "Your Cart — Quilll Cards" },
       { property: "og:description", content: "Review your items and continue to checkout." },
     ],
   }),

@@ -10,8 +10,8 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <div className="flex items-center gap-2">
-            <img src={logo.url} alt="Quill Cards" className="h-10 w-10 object-contain" />
-            <span className="font-display text-lg font-semibold text-primary">Quill Cards</span>
+            <img src={logo.url} alt="Quilll Cards" className="h-10 w-10 object-contain" />
+            <span className="font-display text-lg font-semibold text-primary">Quilll Cards</span>
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             Thoughtfully designed Salah trackers, laminated charts, flash cards and wall posters for young
@@ -64,7 +64,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Quill Cards. All rights reserved.
+        © {new Date().getFullYear()} Quilll Cards. All rights reserved.
       </div>
     </footer>
   );

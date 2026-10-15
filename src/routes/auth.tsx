@@ -10,9 +10,9 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Admin Login — Quill Cards" },
-      { name: "description", content: "Sign in to manage Quill Cards products, prices and offers." },
-      { property: "og:title", content: "Admin Login — Quill Cards" },
+      { title: "Admin Login — Quilll Cards" },
+      { name: "description", content: "Sign in to manage Quilll Cards products, prices and offers." },
+      { property: "og:title", content: "Admin Login — Quilll Cards" },
       { property: "og:description", content: "Store owner sign in." },
       { name: "robots", content: "noindex" },
     ],

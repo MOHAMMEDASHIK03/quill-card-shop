@@ -7,13 +7,13 @@ import { CONTACT_NUMBER, UPI_ID, WHATSAPP_NUMBER } from "@/lib/cart";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Quill Cards" },
+      { title: "Contact Quilll Cards" },
       {
         name: "description",
         content:
-          "Message Quill Cards on WhatsApp at 8903721505 for orders, bulk enquiries and custom designs.",
+          "Message Quilll Cards on WhatsApp at 8903721505 for orders, bulk enquiries and custom designs.",
       },
-      { property: "og:title", content: "Contact Quill Cards" },
+      { property: "og:title", content: "Contact Quilll Cards" },
       { property: "og:description", content: "Reach us on WhatsApp at 8903721505." },
     ],
   }),
@@ -45,7 +45,7 @@ function Contact() {
           <p className="text-sm text-muted-foreground">Orders and enquiries</p>
           <Button asChild className="mt-4">
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi Quill Cards, I have a question.")}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi Quilll Cards, I have a question.")}`}
               target="_blank"
               rel="noreferrer"
             >

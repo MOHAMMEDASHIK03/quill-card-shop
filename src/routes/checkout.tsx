@@ -15,13 +15,13 @@ import { CONTACT_NUMBER, UPI_ID, WHATSAPP_NUMBER, formatINR, useCart } from "@/l
 export const Route = createFileRoute("/checkout")({
   head: () => ({
     meta: [
-      { title: "Checkout — Quill Cards" },
+      { title: "Checkout — Quilll Cards" },
       {
         name: "description",
         content:
-          "Enter your delivery details, pay by scanning the UPI QR code, then send your Quill Cards order straight to WhatsApp.",
+          "Enter your delivery details, pay by scanning the UPI QR code, then send your Quilll Cards order straight to WhatsApp.",
       },
-      { property: "og:title", content: "Checkout — Quill Cards" },
+      { property: "og:title", content: "Checkout — Quilll Cards" },
       { property: "og:description", content: "Pay by UPI and confirm your order on WhatsApp." },
     ],
   }),
@@ -98,7 +98,7 @@ function Checkout() {
     }
 
     const lines = [
-      "*New order — Quill Cards*",
+      "*New order — Quilll Cards*",
       "",
       "*Items*",
       ...items.map((i) => `• ${i.name} x${i.qty} — ${formatINR(i.price * i.qty)}`),
