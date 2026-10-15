@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
+import logoFull from "@/assets/logo-full.png.asset.json";
 
 export const Route = createFileRoute("/auth")({
   head: () => ({
@@ -43,7 +44,14 @@ function AuthPage() {
 
   return (
     <div className="mx-auto flex max-w-md flex-col px-4 py-20">
-      <h1 className="text-3xl text-primary">Admin login</h1>
+      <img
+        src={logoFull.url}
+        alt="Quilll Cards"
+        width={1496}
+        height={1496}
+        className="mx-auto h-32 w-auto object-contain"
+      />
+      <h1 className="mt-8 text-3xl text-primary">Admin login</h1>
       <p className="mt-2 text-sm text-muted-foreground">For the store owner only.</p>
 
       <div className="mt-8 space-y-4 rounded-xl border border-border bg-card p-6">
