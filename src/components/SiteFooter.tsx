@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, MessageCircle } from "lucide-react";
 
-import logo from "@/assets/logo.png.asset.json";
+import logo from "@/assets/logo.png";
 import { CONTACT_NUMBER, WHATSAPP_NUMBER } from "@/lib/cart";
 
 export function SiteFooter() {
@@ -10,7 +10,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <div className="flex items-center gap-2">
-            <img src={logo.url} alt="Quilll Cards" className="h-10 w-10 object-contain" />
+            <img src={logo} alt="Quilll Cards" className="h-10 w-10 object-contain" />
             <span className="font-display text-lg font-semibold text-primary">Quilll Cards</span>
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">

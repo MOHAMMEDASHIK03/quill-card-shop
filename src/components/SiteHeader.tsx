@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ShoppingBag, Menu } from "lucide-react";
 import { useState } from "react";
 
-import logo from "@/assets/logo.png.asset.json";
+import logo from "@/assets/logo.png";
 import { useCart } from "@/lib/cart";
 import { Button } from "@/components/ui/button";
 
@@ -20,7 +20,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo.url} alt="Quilll Cards logo" className="h-11 w-11 object-contain" />
+          <img src={logo} alt="Quilll Cards logo" className="h-11 w-11 object-contain" />
           <span className="font-display text-lg font-semibold text-primary sm:text-xl">Quilll Cards</span>
         </Link>
 
