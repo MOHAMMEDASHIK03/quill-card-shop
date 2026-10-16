@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 import { z } from "zod";
 
-import qr from "@/assets/upi-qr.png.asset.json";
+import qr from "@/assets/upi-qr.jpg";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -161,7 +161,7 @@ function Checkout() {
           <h2 className="pt-4 font-display text-xl text-primary">2. Pay with UPI</h2>
           <div className="rounded-xl border border-border bg-card p-5 text-center">
             <img
-              src={qr.url}
+              src={qr}
               alt={`UPI QR code for ${UPI_ID}`}
               className="mx-auto w-64 max-w-full rounded-lg"
               loading="lazy"

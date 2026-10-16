@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
-import logoFull from "@/assets/logo-full.png.asset.json";
+import logoFull from "@/assets/logo-full.png";
 
 export const Route = createFileRoute("/auth")({
   head: () => ({
@@ -45,7 +45,7 @@ function AuthPage() {
   return (
     <div className="mx-auto flex max-w-md flex-col px-4 py-20">
       <img
-        src={logoFull.url}
+        src={logoFull}
         alt="Quilll Cards"
         width={1496}
         height={1496}
