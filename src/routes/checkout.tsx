@@ -109,6 +109,7 @@ function Checkout() {
       `Name: ${d.name}`,
       `Address: ${fullAddress}`,
       `Mobile Number: ${d.phone}`,
+      d.email ? `Email: ${d.email}` : "",
       d.notes ? `Notes: ${d.notes}` : "",
       d.paymentRef ? `UPI payment reference: ${d.paymentRef}` : "Payment: will share screenshot",
     ].filter(Boolean);
