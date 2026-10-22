@@ -107,9 +107,8 @@ function Checkout() {
       "",
       "*Customer details*",
       `Name: ${d.name}`,
-      `Phone: ${d.phone}`,
-      d.email ? `Email: ${d.email}` : "",
       `Address: ${fullAddress}`,
+      `Mobile Number: ${d.phone}`,
       d.notes ? `Notes: ${d.notes}` : "",
       d.paymentRef ? `UPI payment reference: ${d.paymentRef}` : "Payment: will share screenshot",
     ].filter(Boolean);
@@ -135,14 +134,6 @@ function Checkout() {
           <Field label="Full name" error={errors["name"]}>
             <Input value={form.name} onChange={set("name")} placeholder="Your name" maxLength={100} />
           </Field>
-          <div className="grid gap-5 sm:grid-cols-2">
-            <Field label="Phone number" error={errors["phone"]}>
-              <Input value={form.phone} onChange={set("phone")} placeholder="10-digit mobile" maxLength={15} />
-            </Field>
-            <Field label="Email (optional)" error={errors["email"]}>
-              <Input value={form.email} onChange={set("email")} placeholder="you@example.com" maxLength={255} />
-            </Field>
-          </div>
           <Field label="Delivery address" error={errors["address"]}>
             <Textarea value={form.address} onChange={set("address")} rows={3} maxLength={500} placeholder="House / street / area" />
           </Field>
@@ -152,6 +143,14 @@ function Checkout() {
             </Field>
             <Field label="Pincode" error={errors["pincode"]}>
               <Input value={form.pincode} onChange={set("pincode")} maxLength={6} />
+            </Field>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2">
+            <Field label="Mobile number" error={errors["phone"]}>
+              <Input value={form.phone} onChange={set("phone")} placeholder="10-digit mobile" maxLength={15} />
+            </Field>
+            <Field label="Email (optional)" error={errors["email"]}>
+              <Input value={form.email} onChange={set("email")} placeholder="you@example.com" maxLength={255} />
             </Field>
           </div>
           <Field label="Order notes (optional)" error={errors["notes"]}>
