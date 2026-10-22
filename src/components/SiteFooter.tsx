@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Phone, MessageCircle } from "lucide-react";
 
 import logo from "@/assets/logo.png";
+import wordmark from "@/assets/logo-wordmark.png";
 import { CONTACT_NUMBER, WHATSAPP_NUMBER } from "@/lib/cart";
 
 export function SiteFooter() {
@@ -11,7 +12,7 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-2">
             <img src={logo} alt="Quilll Cards" className="h-10 w-10 object-contain" />
-            <span className="font-display text-lg font-semibold text-primary">Quilll Cards</span>
+            <img src={wordmark} alt="Quilll Cards" className="h-6 w-auto" />
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             Thoughtfully designed Salah trackers, laminated charts, flash cards and wall posters for young

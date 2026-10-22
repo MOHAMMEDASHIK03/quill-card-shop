@@ -3,6 +3,7 @@ import { ShoppingBag, Menu } from "lucide-react";
 import { useState } from "react";
 
 import logo from "@/assets/logo.png";
+import wordmark from "@/assets/logo-wordmark.png";
 import { useCart } from "@/lib/cart";
 import { Button } from "@/components/ui/button";
 
@@ -21,7 +22,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="Quilll Cards logo" className="h-11 w-11 object-contain" />
-          <span className="font-display text-lg font-semibold text-primary sm:text-xl">Quilll Cards</span>
+          <img src={wordmark} alt="Quilll Cards" className="h-7 w-auto sm:h-8" />
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm font-medium md:flex">
